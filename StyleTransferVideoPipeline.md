@@ -1,6 +1,7 @@
 ##Requires Algorithmia.com account
 ##Algorithmia CLI: https://github.com/algorithmiaio/algorithmia-cli
 
+##Note: Video processing is slow at the time
 
 ##Split video into frames that is read from Data API
 algo run media/VideoAlgorithms -d '{"format":"SplitToFrames","data":{"input":{"inputVideoUrl":"data://.algo/youtube/DownloadYoutubeVid/temp/video.mp4"},"output":{"collection":"data://.my/filter","prefix":"algo_diego","extension":"jpg","zippedOutput":false},"fps":20}}'
